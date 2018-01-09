@@ -14,7 +14,7 @@ public class SqliteJDBC_Testing {
 //	  	DatabaseMetaData metaData = conn.getMetaData();
 //	  	System.out.println(metaData.getDatabaseProductName());
 	  	
-	  	PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM z40180_deptTB");
+	  	PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM z40180_deptTB ");
 	  	ResultSet rs = pstmt.executeQuery();
 	  	while (rs.next()) {
 			System.out.println(rs.getString("deptno"));
